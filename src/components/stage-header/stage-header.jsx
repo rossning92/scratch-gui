@@ -152,6 +152,7 @@ const StageHeaderComponent = function (props) {
                     <Controls vm={vm} />
                     <div className={styles.stageSizeRow}>
                         {stageControls}
+                        {/* RN: HACK: remove full screen button
                         <div>
                             <Button
                                 className={styles.stageButton}
@@ -166,6 +167,7 @@ const StageHeaderComponent = function (props) {
                                 />
                             </Button>
                         </div>
+                        */}
                     </div>
                 </Box>
             </Box>

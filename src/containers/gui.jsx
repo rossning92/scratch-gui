@@ -203,7 +203,7 @@ const WrappedGui = compose(
     ErrorBoundaryHOC('Top Level App'),
     FontLoaderHOC,
     QueryParserHOC,
-    ProjectFetcherHOC,
+    // ProjectFetcherHOC, // RN: HACK: Do not load default project 
     ProjectSaverHOC,
     vmListenerHOC,
     vmManagerHOC,

@@ -73,6 +73,10 @@ const getStageDimensions = (stageSize, isFullScreen) => {
     stageDimensions.height = Math.round(stageDimensions.height);
     stageDimensions.width = Math.round(stageDimensions.width);
 
+    // RN: HACK:  
+    stageDimensions.width = window.innerWidth - 2;
+    stageDimensions.height = stageDimensions.width * .75;
+
     return stageDimensions;
 };
 

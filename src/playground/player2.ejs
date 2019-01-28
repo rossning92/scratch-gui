@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Disable mobile scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="google" value="notranslate">
+    <link rel="shortcut icon" href="static/favicon.ico">
+    <title>奇乐编程学院作品社区</title>
+    <% if (htmlWebpackPlugin.options.sentryConfig) { %>
+        <!-- Sentry error logging to help with finding bugs -->
+        <script src="https://cdn.ravenjs.com/3.22.1/raven.min.js" crossorigin="anonymous"></script>
+        <script>
+            Raven.config(<%= htmlWebpackPlugin.options.sentryConfig %>).install();
+        </script>
+        <!-- /Sentry -->
+    <% } %>
+    <!-- Semantic UI Start -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <!-- Semantic UI End -->
+    <style>
+      body {
+        font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
